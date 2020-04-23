@@ -1,5 +1,5 @@
 <html>
-<head>
+<body></body>
 <script>
 let rate = 0.1;
 function colorize(timestamp) {
@@ -7,9 +7,10 @@ function colorize(timestamp) {
 	document.body.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
 	requestAnimationFrame(colorize);
 }
-
 requestAnimationFrame(colorize);
+document.body.onclick = function() {
+	document.documentElement.requestFullscreen();
+}
 </script>
-</head>
-<body></body>
+
 </html>
