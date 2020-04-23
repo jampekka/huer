@@ -1,7 +1,7 @@
 <html>
 <head>
 <script>
-let rate = 1;
+let rate = 0.1;
 function colorize(timestamp) {
 	let hue = timestamp/1000*360*rate%360;
 	document.body.style.backgroundColor = `hsl(${hue}, 100%, 50%)`;
